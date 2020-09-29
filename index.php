@@ -1,4 +1,4 @@
-declare(strict_types=1);
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,14 +61,15 @@ declare(strict_types=1);
 </html>
 
 <?php
+// declare(strict_types=1);
 
 if(isset($_POST['title']) || isset($_POST['date']) || isset($_POST['content']) || isset($_POST['author'])) {
 
     $myFile = fopen("comments.html", "a") or die ("this gives an error");
-    $writeInFile1 = "<br>Name:</br>" . $_POST['title'] . "<br/>";
-    $writeInFile2 = "<br>Name:</br>" . $_POST['date'] . "<br/>";
-    $writeInFile3 = "<br>Name:</br>" . $_POST['content'] . "<br/>";
-    $writeInFile4 = "<br>Name:</br>" . $_POST['author'] . "<br/><hr>";
+    $writeInFile1 = "<br>Name:</br>" . $_POST['title'] . "";
+    $writeInFile2 = "<br>Name:</br>" . $_POST['date'] . "";
+    $writeInFile3 = "<br>Name:</br>" . $_POST['content'] . "";
+    $writeInFile4 = "<br>Name:</br>" . $_POST['author'] . "<hr>";
     fwrite($myFile, $writeInFile1);
     fwrite($myFile, $writeInFile2);
     fwrite($myFile, $writeInFile3);
@@ -76,7 +77,7 @@ if(isset($_POST['title']) || isset($_POST['date']) || isset($_POST['content']) |
     fclose($myFile);
 }
 
-require("comments.html");
+include("comments.html");
 
 ?>
 
