@@ -6,17 +6,49 @@
     <title>guest-book challenge</title>
 </head>
 <body>
+
+    <h1>Guest book</h1>
+
     <form action="#" method="post">
+
+        <label for="title"> Title:
         <input type="text" name="title"/>
-        <label for="date">Today:>
+        </label>
+
+        <br>
+
+        <label for="date"> Date of today:
         <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}"/>
         </label>
-        <input type="text" name="content"/>
-        <input type="text" name="author"/>
+
+        <br>
+
+        <label for="content"> Your message:
+            <input type="text" name="content"/>
+        </label>
+
+        <br>
+
+        <label for="author"> Your name:
+            <input type="text" name="author"/>
+        </label>
+
+        <br>
+
+        <label for="post"> Sent it:
+            <input type="submit" name="post"/>
+        </label>
+
     </form>
 </body>
 </html>
 
 <?php
-declare(strict_types=1);
+// declare(strict_types=1);
+
+$myfile =
+
+
+
+?>
 
