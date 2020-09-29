@@ -49,6 +49,31 @@
             </label>
 
         </form>
+
+        <?php
+        // declare(strict_types=1);
+
+        // Start the session
+        session_start();
+
+        if(isset($_POST['title']) && isset($_POST['date']) && isset($_POST['content']) && isset($_POST['author'])) {
+
+            $myFile = fopen("includes/comments.html", "a") or die ("this does not work now");
+            $writeInFile1 = "<br>Title:</br>" . $_POST['title'] . "<br>";
+            $writeInFile2 = "<br>Current date:</br>" . $_POST['date'] . "<br>";
+            $writeInFile3 = "<br>Your message:</br>" . $_POST['content'] . "<br>";
+            $writeInFile4 = "<br>By:</br>" . $_POST['author'] . "<hr>";
+            fwrite($myFile, $writeInFile1);
+            fwrite($myFile, $writeInFile2);
+            fwrite($myFile, $writeInFile3);
+            fwrite($myFile, $writeInFile4);
+            fclose($myFile);
+        }
+
+        include("includes/comments.html");
+
+        ?>
+
     </main>
 
     <footer>
@@ -60,26 +85,7 @@
 </body>
 </html>
 
-<?php
-// declare(strict_types=1);
 
-if(isset($_POST['title']) || isset($_POST['date']) || isset($_POST['content']) || isset($_POST['author'])) {
-
-    $myFile = fopen("comments.html", "a") or die ("this gives an error");
-    $writeInFile1 = "<br>Name:</br>" . $_POST['title'] . "";
-    $writeInFile2 = "<br>Name:</br>" . $_POST['date'] . "";
-    $writeInFile3 = "<br>Name:</br>" . $_POST['content'] . "";
-    $writeInFile4 = "<br>Name:</br>" . $_POST['author'] . "<hr>";
-    fwrite($myFile, $writeInFile1);
-    fwrite($myFile, $writeInFile2);
-    fwrite($myFile, $writeInFile3);
-    fwrite($myFile, $writeInFile4);
-    fclose($myFile);
-}
-
-include("comments.html");
-
-?>
 
 
 
