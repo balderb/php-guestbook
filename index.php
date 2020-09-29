@@ -1,3 +1,5 @@
+declare(strict_types=1);
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
 
 <div class = "main container">
     <header>
-        <h1>Welcome to the Guest book challenge</h1>
+        <h1>Welcome to the Guestbook challenge</h1>
         <p>Please leave a comment below. It's free! :)</p>
 
     </header>
@@ -59,18 +61,20 @@
 </html>
 
 <?php
-// declare(strict_types=1);
 
-$myFile = fopen("comments.html","a") or die ("this gives an error");
-$writeInFile1= "<br>Name:</br>".$_POST['title']."<br/>";
-$writeInFile2= "<br>Name:</br>".$_POST['date']."<br/>";
-$writeInFile3= "<br>Name:</br>".$_POST['content']."<br/>";
-$writeInFile4= "<br>Name:</br>".$_POST['author']."<br/><hr>";
-fwrite($myFile, $writeInFile1);
-fwrite($myFile, $writeInFile2);
-fwrite($myFile, $writeInFile3);
-fwrite($myFile, $writeInFile4);
-fclose($myFile);
+if(isset($_POST['title']) || isset($_POST['date']) || isset($_POST['content']) || isset($_POST['author'])) {
+
+    $myFile = fopen("comments.html", "a") or die ("this gives an error");
+    $writeInFile1 = "<br>Name:</br>" . $_POST['title'] . "<br/>";
+    $writeInFile2 = "<br>Name:</br>" . $_POST['date'] . "<br/>";
+    $writeInFile3 = "<br>Name:</br>" . $_POST['content'] . "<br/>";
+    $writeInFile4 = "<br>Name:</br>" . $_POST['author'] . "<br/><hr>";
+    fwrite($myFile, $writeInFile1);
+    fwrite($myFile, $writeInFile2);
+    fwrite($myFile, $writeInFile3);
+    fwrite($myFile, $writeInFile4);
+    fclose($myFile);
+}
 
 require("comments.html");
 
