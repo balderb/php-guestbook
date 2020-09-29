@@ -70,7 +70,7 @@ fwrite($myFile, $writeInFile1);
 fwrite($myFile, $writeInFile2);
 fwrite($myFile, $writeInFile3);
 fwrite($myFile, $writeInFile4);
-fclose($myfile);
+fclose($myFile);
 
 require("comments.html");
 
