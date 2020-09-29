@@ -10,7 +10,9 @@
 
 <div class = "main container">
     <header>
-        <h1>Guest book challenge</h1>
+        <h1>Welcome to the Guest book challenge</h1>
+        <p>Please leave a comment below. It's free! :)</p>
+
     </header>
 
     <main>
