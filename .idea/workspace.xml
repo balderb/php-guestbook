@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ce1093e4-c186-465c-8310-1d302f78a9f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/PostLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/PostLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +43,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -37,18 +59,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601364134040</updated>
-      <workItem from="1601364135115" duration="2422000" />
+      <workItem from="1601364135115" duration="3208000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="-1270" y="201" key="#PHP" timestamp="1601365811877">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1270" y="201" key="#PHP/0.23.1792.1097/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601365811877" />
+    <state x="-1577" y="482" key="NewPhpFileDialog" timestamp="1601366848169">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1577" y="482" key="NewPhpFileDialog/0.23.1792.1097/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601366848169" />
     <state x="-1736" y="258" key="search.everywhere.popup" timestamp="1601366453984">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
