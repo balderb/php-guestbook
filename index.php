@@ -6,7 +6,14 @@
     <title>guest-book challenge</title>
 </head>
 <body>
-
+    <form action="#" method="post">
+        <input type="text" name="title"/>
+        <label for="date">Today:>
+        <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}"/>
+        </label>
+        <input type="text" name="content"/>
+        <input type="text" name="author"/>
+    </form>
 </body>
 </html>
 
