@@ -72,6 +72,8 @@ fwrite($myFile, $writeInFile3);
 fwrite($myFile, $writeInFile4);
 fclose($myfile);
 
+require("comments.html");
+
 ?>
 
 
