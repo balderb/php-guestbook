@@ -66,7 +66,12 @@ $writeInFile1= "<br>Name:</br>".$_POST['title']."<br/>";
 $writeInFile2= "<br>Name:</br>".$_POST['date']."<br/>";
 $writeInFile3= "<br>Name:</br>".$_POST['content']."<br/>";
 $writeInFile4= "<br>Name:</br>".$_POST['author']."<br/><hr>";
-fwrite();
+fwrite($myFile, $writeInFile1);
+fwrite($myFile, $writeInFile2);
+fwrite($myFile, $writeInFile3);
+fwrite($myFile, $writeInFile4);
+
+
 ?>
 
 
