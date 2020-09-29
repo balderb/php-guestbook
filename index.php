@@ -8,39 +8,51 @@
 </head>
 <body>
 
-    <h1>Guest book challenge</h1>
+<div class = "main container">
+    <header>
+        <h1>Guest book challenge</h1>
+    </header>
 
-    <form action="#" method="post">
+    <main>
+        <form action="#" method="post">
 
-        <label for="title"> Title:
-        <input type="text" name="title"/>
-        </label>
+            <label for="title"> Title:
+            <input type="text" name="title"/>
+            </label>
 
-        <br>
+            <br>
 
-        <label for="date"> Date of today:
-        <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}"/>
-        </label>
+            <label for="date"> Date of today:
+            <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}"/>
+            </label>
 
-        <br>
+            <br>
 
-        <label for="content"> Your message:
+            <label for="content"> Your message:
             <input type="text" name="content"/>
-        </label>
+            </label>
 
-        <br>
+            <br>
 
-        <label for="author"> Your name:
+            <label for="author"> Your name:
             <input type="text" name="author"/>
-        </label>
+            </label>
 
-        <br>
+            <br>
 
-        <label for="post"> Sent it:
+            <label for="post"> Sent it:
             <input type="submit" name="post"/>
-        </label>
+            </label>
 
-    </form>
+        </form>
+    </main>
+
+    <footer>
+        <!–– here comes the functioncall getFooter() in php ––>
+    </footer>
+
+</div>
+
 </body>
 </html>
 
