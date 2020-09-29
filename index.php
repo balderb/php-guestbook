@@ -42,7 +42,7 @@
 
             <br>
 
-            <label for="post"> Sent it:
+            <label for="post"> Send it:
             <input type="submit" name="post"/>
             </label>
 
@@ -61,7 +61,14 @@
 <?php
 // declare(strict_types=1);
 
-// $myfile =
+$myFile = fopen("comments.html","a") or die ("this gives an error");
+$writeInFile1= "<br>Name:</br>".$_POST['title']."<br/>";
+$writeInFile2= "<br>Name:</br>".$_POST['date']."<br/>";
+$writeInFile3= "<br>Name:</br>".$_POST['content']."<br/>";
+$writeInFile4= "<br>Name:</br>".$_POST['author']."<br/><hr>";
+
+?>
+
 
 
 
