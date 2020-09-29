@@ -48,7 +48,7 @@
     </main>
 
     <footer>
-        <!–– here comes the functioncall getFooter() in php ––>
+        <!–– task here comes the function call getFooter() in php as indicated in Tips & Advice ––>
     </footer>
 
 </div>
